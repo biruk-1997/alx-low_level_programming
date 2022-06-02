@@ -1,1 +1,1 @@
-C programing first course
+c programing course part one
