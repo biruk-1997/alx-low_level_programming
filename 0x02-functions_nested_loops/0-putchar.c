@@ -1,6 +1,6 @@
 /* C program to print a long int number
 using putchar() only*/
-#include <stdio.h>
+#include <main.h>
 
 void print(long n)
 {
