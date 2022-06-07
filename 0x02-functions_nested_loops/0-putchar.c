@@ -1,29 +1,15 @@
-/* C program to print a long int number
-using putchar() only*/
-#include <main.h>
 
-void print(long n)
+#include "main.h"
+
+/**
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ */
+void print_alphabet(void)
 {
-	// If number is smaller than 0, put a - sign
-	// and change number to positive
-	if (n < 0) {
-		putchar('-');
-		n = -n;
-	}
+	char letter;
 
-	// Remove the last digit and recur
-	if (n/10)
-		print(n/10);
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
 
-	// Print the last digit
-	putchar(n%10 + '0');
+	_putchar('\n');
 }
-
-// Driver program to test above function
-int main()
-{
-	long int n = 12045;
-	print(n);
-	return 0;
-}
-
